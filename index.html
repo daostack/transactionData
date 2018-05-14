@@ -11,7 +11,7 @@
             <script type="text/javascript" src="bundle.js"></script>
             <script type="text/javascript">
                 function composeTransferData() {
-                    document.getElementById('TXdata').innerHTML = module.tokenTransferData(1, "0x1");
+                    document.getElementById('TXdata').innerHTML = module.tokenTransferData(document.getElementById('amount').value, document.getElementById('address').value);
                 }
             </script>
             <form>
