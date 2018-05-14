@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Transaction data builder</title>
+    </head>
+
+    <body>
+        <h1>Transaction composer</h1>
+        <div id="compose_transfer">
+            <script type="text/javascript" src="bundle.js"></script>
+            <script type="text/javascript">
+                function composeTransferData() {
+                    document.getElementById('TXdata').innerHTML = module.tokenTransferData(1, "0x1");
+                }
+            </script>
+            <form>
+                <label>Address:</labe>
+                <input type="text" id="address" placehold="to address">
+                <br>
+                <label>Amount (in GEN):</labe>
+                <input type="number" id="amount" placehold="0">
+                <br>
+                <button type="button" onClick="composeTransferData()">Create</button>
+            </form>
+            <br>
+            <div>
+                <label id="TXdata">result</label>
+            </div>
+        </div>
+    </body>
+</html>
