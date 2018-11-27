@@ -11,15 +11,18 @@
             <script type="text/javascript" src="bundle.js"></script>
             <script type="text/javascript">
                 function composeTransferData() {
-                    document.getElementById('TXdata').innerHTML = module.tokenTransferData(document.getElementById('amount').value, document.getElementById('address').value);
+                    document.getElementById('TXdata').innerHTML = module.tokenTransferData(document.getElementById('amount').value, document.getElementById('address').value, document.getElementById('decimals').value);
                 }
             </script>
             <form>
                 <label>Address:</labe>
-                <input type="text" id="address" placehold="to address">
+                <input type="text" id="address" placeholder="to address">
                 <br>
-                <label>Amount (in GEN):</labe>
-                <input type="number" id="amount" placehold="0">
+                <label>Amount:</labe>
+                <input type="number" id="amount" placeholder="0">
+                <br>
+                <label>Decimals:</labe>
+                <input type="number" id="decimals" value="18">
                 <br>
                 <button type="button" onClick="composeTransferData()">Create</button>
             </form>
