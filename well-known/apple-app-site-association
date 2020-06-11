@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "66CXPKJ7ZA.com.daostack.common",
+            "paths": ["/common/*", "/", "/proposal/*"]
+            }
+        ]
+    }
+}
